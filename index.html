@@ -8,12 +8,12 @@
 </head>
 <body>
 
-    <div class="container title">
+    <header class="container" id="header-container">
         <h1>Fabric Code Generator</h1>
         <p>Create 3-character codes from any word or phrase.</p>
-    </div>
+    </header>
 
-    <div class="container form-container">
+    <div class="container" id="form-container">
         <form id="input-form">
             <label for="input-string">Enter a word or phrase:</label><br>
             <input type="text" id="input-string" name="input-string">
@@ -27,6 +27,9 @@
         <ul id="results-list"></ul>
     </div>
 
+    <div style="flex-grow:1"></div>
+
+    <footer>Created by Hayley Parker 2024</footer>
     
     <script src="script.js"></script>
 </body>
