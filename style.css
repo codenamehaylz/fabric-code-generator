@@ -1,9 +1,11 @@
-* {
+body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F1EE;
 }
 
 h1 {
     color: #c41f40;
+    margin-bottom: 5px;
 }
 
 .container {
@@ -12,7 +14,10 @@ h1 {
     padding: 10px;
     width: 60%;
     border-radius: 10px;
-    border: 1px solid red;
+    background-color: #ffffff;
+}
+
+.title, .form-container {
     text-align: center;
 }
 
@@ -25,4 +30,27 @@ h1 {
 
 .hidden {
     visibility: hidden;
+}
+
+#results-list {
+    list-style: disc;
+    column-count: auto;
+    column-width: 5rem;
+}
+
+li {
+    padding: 2px 0px;
+}
+
+
+@media screen and (max-width: 425px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 75%;
+    }
 }

@@ -8,22 +8,22 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container title">
         <h1>Fabric Code Generator</h1>
         <p>Create 3-character codes from any word or phrase.</p>
     </div>
 
-    <div class="container">
+    <div class="container form-container">
         <form id="input-form">
             <label for="input-string">Enter a word or phrase:</label><br>
-            <input type="text" id="input-string" name="input-string" required><br>
+            <input type="text" id="input-string" name="input-string">
             <button type="submit">Submit</button>
         </form>
         <div id="error" class="hidden"></div>
     </div>
 
     <div class="container" id="results-container">
-        <h2>Results:</h2>
+        <h2>Results<span id="result-word"></span>:</h2>
         <ul id="results-list"></ul>
     </div>
 
