@@ -1,6 +1,6 @@
 # Fabric Code Generator
 
-A simple web app to create 3-character codes from a word or phrase. 
+A simple web app to create 3-character codes from a word or phrase. [Click here](https://codenamehaylz.github.io/fabric-code-generator/) to go to the deployed application.
 
 ### ...but why?
 I built this specifically as an aid for my previous admin job, where I had to come up with codes for new fabrics that we were launching, based on what we were naming them. For example the code for 'Charlotte' might be 'CHA'. However as more fabrics were added, it became harder to find unique codes that were not already used on our system.
