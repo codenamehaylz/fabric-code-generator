@@ -31,6 +31,7 @@ const generateCodes = (input, maxLength) => {
 
 const inputForm = document.getElementById("input-form");
 const resultsList = document.getElementById("results-list");
+const resultWord = document.getElementById("result-word");
 const error = document.getElementById("error");
 
 inputForm.addEventListener("submit", (e) => {
@@ -44,12 +45,14 @@ inputForm.addEventListener("submit", (e) => {
       listItem.textContent = code;
       resultsList.appendChild(listItem);
     });
+    resultWord.textContent = " for '" + userInput.value + "'";
     error.textContent = "";
     userInput.value = "";
   } else {
     error.textContent = "Please enter a word or phrase of at least 3 characters.";
     error.classList.remove("hidden");
     userInput.value = "";
+    resultWord.textContent = "";
     setTimeout(() => {
       error.classList.add("hidden");
     }, 3000)
