@@ -48,6 +48,10 @@ inputForm.addEventListener("submit", (e) => {
     userInput.value = "";
   } else {
     error.textContent = "Please enter a word or phrase of at least 3 characters.";
+    error.classList.remove("hidden");
     userInput.value = "";
+    setTimeout(() => {
+      error.classList.add("hidden");
+    }, 3000)
   }
 });
